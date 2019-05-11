@@ -1,10 +1,9 @@
-package testCola;
+package Cola;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import Cola.ColaDinamica;
 
 public class ColaDinamicaTest {
 

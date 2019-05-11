@@ -1,10 +1,9 @@
-package testPila;
+package Pila;
 
 import org.junit.Test;
 import org.junit.Assert;
 import org.junit.Before;
 
-import Pila.PilaDinamica;
 
 public class PilaDinamicaTest {
 	

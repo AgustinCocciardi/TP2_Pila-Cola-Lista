@@ -1,10 +1,9 @@
-package testPila;
+package Pila;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import Pila.PilaEstatica;
 
 public class PilaEstaticaTest {
 
@@ -18,7 +17,8 @@ private PilaEstatica<String> pila;
 	@Test
 	public void quePuedeApilar() {
 		pila.push("Sofia");
-		Assert.assertNotNull(pila);
+		Assert.assertEquals(false,pila.isEmpty());
+		Assert.assertEquals("Sofia",pila.peek());
 	}
 	
 	@Test

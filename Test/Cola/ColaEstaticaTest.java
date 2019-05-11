@@ -1,10 +1,8 @@
-package testCola;
+package Cola;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import Cola.ColaEstatica;
 
 public class ColaEstaticaTest {
 
@@ -18,7 +16,8 @@ public class ColaEstaticaTest {
 	@Test
 	public void quePuedeEncolar() {
 		cola.offer("Sofia");
-		Assert.assertNotNull(cola);
+		Assert.assertEquals(false,cola.isEmpty());
+		Assert.assertEquals("Sofia",cola.peek());
 	}
 	
 	@Test

@@ -108,7 +108,7 @@ public class Lista<T> {
 			return;
 		Nodo<T> act = this.primEl;
 		Nodo<T> ant = null;
-		while (act != null && posicion-- > 0) {
+		while (act != null && posicion-- > 1) {
 			ant = act;
 			act = act.getSig();
 		}
@@ -137,12 +137,12 @@ public class Lista<T> {
 		return act != null;
 	}
 
-	public boolean searchAt(int posicion) {
+	public T searchAt(int posicion) {
 		Nodo<T> act = this.primEl;
-		while (act != null && posicion-- > 0) {
+		while (act != null && posicion-- > 1) {
 			act = act.getSig();
 		}
-		return act != null;
+		return act==null ? null: act.getDato();
 	}
 
 	public int size() {
