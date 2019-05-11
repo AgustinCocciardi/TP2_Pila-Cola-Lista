@@ -4,10 +4,11 @@ public class ColaEstatica<T> implements Cola<T> {
 
 	private T[] cola;
 	private int cantElem = 0;
-	private int tam = cola.length;
+	private int tam;
 
 	public ColaEstatica() {
 		this.cola = (T[]) new Object[5];
+		this.tam = this.cola.length;
 	}
 
 	@Override
