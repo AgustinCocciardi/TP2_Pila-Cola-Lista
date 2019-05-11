@@ -23,12 +23,14 @@ public class PilaDinamicaTest {
 	
 	@Test
 	public void quePuedeDesapilar() {
+		pila.push("Victor");
 		pila.push("German");
 		Assert.assertEquals("German", pila.pop());
 	}
 	
 	@Test 
 	public void quePuedeUsarPeek() {
+		pila.push("Hola");
 		pila.push("Mario Hugo");
 		Assert.assertEquals("Mario Hugo", pila.peek());
 	}
